@@ -30,11 +30,12 @@ div.container header div.jumbotron div.jumboBlock div.button:hover {
   cursor: pointer;
 }
 div.container main {
-  background-color: whitesmoke;
+  background-color: white;
 }
 div.container main section.services {
   display: flex;
-  width: 100%;
+  width: 90vw;
+  margin: auto;
   justify-content: center;
 }
 div.container main section.services div.serviceCard {
@@ -49,6 +50,44 @@ div.container main section.services div.serviceCard img {
 div.container main section.services div.serviceCard h5 {
   align-self: center;
   margin: 10px;
+}
+div.container main section.adBox {
+  background-color: white;
+  width: 90vw;
+  margin: auto;
+}
+div.container main section.adBox div.box {
+  display: flex;
+  width: 90vw;
+  margin: auto;
+  justify-content: center;
+}
+div.container main section.adBox div.box div.textBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  align-self: center;
+}
+div.container main section.adBox div.box div.textBox h5 {
+  font-size: 40px;
+}
+div.container main section.adBox div.box div.textBox p {
+  font-size: 15px;
+}
+div.container main section.adBox div.box div.textBox a {
+  font-size: 18px;
+  text-decoration: none;
+}
+div.container main section.adBox div.box div.textBox a i {
+  display: none;
+}
+div.container main section.adBox div.box div.textBox a:hover i {
+  display: inline-block;
+}
+div.container main section.adBox div.box div.imgBox img {
+  max-width: 500px;
+  height: auto;
 }
 
 div.container header div.jumbotron div.box {
