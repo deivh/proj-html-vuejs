@@ -2,7 +2,7 @@ function initVue() {
     new Vue({
         el: '#app', 
         data: {
-            'jumbotron' : 
+            'images' : 
                         ["img/jumbotron-1.jpg",
                          "img/jumbotron-2.jpg",
                          "img/jumbotron-3.jpg"
@@ -33,13 +33,13 @@ function initVue() {
         },
         methods: {
              slider: function(){
-                 this.img = this.jumbotron[this.cont];
+                 this.img = this.images[this.cont];
                  return this.img;
              },
              getClick: function() {
                 this.cont  += 1;
                 console.log(this.cont);
-                this.cont = this.cont >= this.jumbotron.length  ? 0 : this.cont = this.cont
+                this.cont = this.cont >= this.images.length  ? 0 : this.cont = this.cont
                  return this.cont;
              },
              removeClick: function() {
@@ -55,4 +55,7 @@ function init() {
     initVue();
 }
 
-document.addEventListener('DOMContentLoaded', init);
+init();
+console.log("hello world");
+document.addEventListener('DOMContentLoaded', init)
+// $(init);

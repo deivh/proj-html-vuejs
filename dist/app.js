@@ -11,7 +11,7 @@ function initVue() {
   new Vue({
     el: '#app',
     data: {
-      'jumbotron': ["img/jumbotron-1.jpg", "img/jumbotron-2.jpg", "img/jumbotron-3.jpg"],
+      'images': ["img/jumbotron-1.jpg", "img/jumbotron-2.jpg", "img/jumbotron-3.jpg"],
       'jumbotronSlides': [{
         'title': 'Contemporary Ideas',
         'text': 'Lorem ipsum',
@@ -33,13 +33,13 @@ function initVue() {
     },
     methods: {
       slider: function slider() {
-        this.img = this.jumbotron[this.cont];
+        this.img = this.images[this.cont];
         return this.img;
       },
       getClick: function getClick() {
         this.cont += 1;
         console.log(this.cont);
-        this.cont = this.cont >= this.jumbotron.length ? 0 : this.cont = this.cont;
+        this.cont = this.cont >= this.images.length ? 0 : this.cont = this.cont;
         return this.cont;
       },
       removeClick: function removeClick() {
@@ -56,7 +56,9 @@ function init() {
   initVue();
 }
 
-document.addEventListener('DOMContentLoaded', init);
+init();
+console.log("hello world");
+document.addEventListener('DOMContentLoaded', init); // $(init);
 
 /***/ }),
 

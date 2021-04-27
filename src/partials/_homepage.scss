@@ -69,7 +69,7 @@ div.container {
             margin: auto;
             div.box {
                 @include boxRules;
-                
+
                 div.textBox {
                   @include textRules;
                 }
@@ -122,6 +122,26 @@ div.container {
                     }
                 }
             }
+        }
+
+        section.sliderProfile {
+            background-image: url("img/slider-profile-bg.png");
+            background-size: cover;
+            display: flex;
+             div.profileFeedback {
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: center;
+                 height: 80vh;
+                 width: auto;
+                 margin: auto;
+                 * {
+                     margin: 15px;
+                     align-self: center;
+                 }
+                
+                
+             }
         }
     }
 }

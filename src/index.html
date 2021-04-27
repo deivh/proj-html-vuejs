@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JQuery -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <!-- VueJS -->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <!-- FontAwesome -->
@@ -30,9 +32,9 @@
             <!-- SLIDER JUMBOTRON -->
             <div class="jumbotron">
                 <div class="box">
-                    <i class="fas fa-angle-left" v-on:click="removeClick"></i>            
-                    <img :src="jumbotron[cont]" alt="">
-                    <i class="fas fa-angle-right" v-on:click="getClick" v-on:click="slider"></i>
+                    <i class="fas fa-angle-left" @click="removeClick"></i>            
+                    <img :src="images[cont]" alt="">
+                    <i class="fas fa-angle-right" @click="getClick" @click="slider"></i>
                 </div> 
                 <div class="jumboBlock">
                     <h2>
@@ -122,8 +124,14 @@
             </section>
 
             <!--  FOURTH SECTION - SLIDER PROFILES -->
+            <!-- DA FARE IN VUE DINAMICO -->
             <section class="sliderProfile">
-            
+                <div class="profileFeedback">
+                    <img src="img/profile.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi perspiciatis eius dolores recusandae earum! Quos harum</p>
+                    <h3>{{Nome Studente}}</h3>
+                    <h4>Student</h4>
+                </div>
             </section>
 
             <!-- FIFTH SECTION - ACTIVE MENU  -->
