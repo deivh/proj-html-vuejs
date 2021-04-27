@@ -1,0 +1,36 @@
+div.container {
+
+    header{
+
+        div.jumbotron {
+
+            div.box {
+                // background-color: purple;
+                height: 90vh;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                z-index: 1;
+                position: absolute;
+
+                img {
+                    object-fit: cover;
+                }
+
+                i {
+                    position: relative;
+                    font-size: 40px;
+                    color: lightgrey;
+                    align-self: center;
+                    z-index: 25;
+                    
+
+                    &:hover {
+                        cursor: pointer;
+                        color: grey;
+                    }
+                }
+            }
+        }
+    }
+}

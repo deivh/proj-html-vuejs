@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- VueJS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <!-- my css -->
     <link rel="stylesheet" href="main.css">
+    <!-- my js -->
     <script src="app.js"></script>
     <title>ICademy</title>
 </head>
@@ -21,9 +27,22 @@
 
             </nav>
 
-            <!-- CLASSIC JUMBOTRON (WITH PARALLAX) -->
+            <!-- SLIDER JUMBOTRON -->
             <div class="jumbotron">
-
+                <div class="box">
+                    <i class="fas fa-angle-left" v-on:click="removeClick"></i>            
+                    <img :src="jumbotron[cont]" alt="">
+                    <i class="fas fa-angle-right" v-on:click="getClick" v-on:click="slider"></i>
+                </div> 
+                <div class="jumboBlock">
+                    <h2>
+                        Contemporary ideas
+                    </h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat eveniet voluptatum reiciendis voluptate.</p>
+                    <div class="button">
+                        REGISTER NOW
+                    </div>
+                </div>
             </div>
 
         </header>
@@ -33,7 +52,30 @@
 
             <!-- FIRST SECTION - SERVICES -->
             <section class="services">
-
+                <div class="serviceCard">
+                    <img src="img/service-card-1.png" alt="">
+                    <h5>Languages</h5>
+                </div>
+                <div class="serviceCard">
+                    <img src="img/service-card-2.png" alt="">
+                    <h5>Software</h5>
+                </div>
+                <div class="serviceCard">
+                    <img src="img/service-card-3.png" alt="">
+                    <h5>Business</h5>
+                </div>
+                <div class="serviceCard">
+                    <img src="img/service-card-4.png" alt="">
+                    <h5>Chemistry</h5>
+                </div>
+                <div class="serviceCard">
+                    <img src="img/service-card-5.png" alt="">
+                    <h5>Science</h5>
+                </div>
+                <div class="serviceCard">
+                    <img src="img/service-card-6.png" alt="">
+                    <h5>DIY&Craft</h5>
+                </div>
             </section>
 
             <!-- SECOND SECTION - AD -->

@@ -1,1 +1,82 @@
+div.container header div.jumbotron {
+  background-image: url("img/jumbotron-1.jpg");
+  height: 90vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+div.container header div.jumbotron div.jumboBlock {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+div.container header div.jumbotron div.jumboBlock h2 {
+  text-align: center;
+  font-size: 60px;
+}
+div.container header div.jumbotron div.jumboBlock div.button {
+  font-size: 15px;
+  font-weight: bolder;
+  padding: 20px;
+  border: 1px solid #40c4ff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px;
+  align-self: center;
+  background-color: #40c4ff;
+}
+div.container header div.jumbotron div.jumboBlock div.button:hover {
+  cursor: pointer;
+}
+div.container main {
+  background-color: whitesmoke;
+}
+div.container main section.services {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+div.container main section.services div.serviceCard {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #9ce0ff;
+}
+div.container main section.services div.serviceCard img {
+  padding: 20px;
+}
+div.container main section.services div.serviceCard h5 {
+  align-self: center;
+  margin: 10px;
+}
 
+div.container header div.jumbotron div.box {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  position: absolute;
+}
+div.container header div.jumbotron div.box img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+div.container header div.jumbotron div.box i {
+  position: relative;
+  font-size: 40px;
+  color: lightgrey;
+  align-self: center;
+  z-index: 25;
+}
+div.container header div.jumbotron div.box i:hover {
+  cursor: pointer;
+  color: grey;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
