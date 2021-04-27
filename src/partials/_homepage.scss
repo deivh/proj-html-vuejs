@@ -68,46 +68,57 @@ div.container {
             width: 90vw;
             margin: auto;
             div.box {
+                @include boxRules;
+                
+                div.textBox {
+                  @include textRules;
+                }
+
+                div.imgBox {
+                    @include imgRules;
+                }
+            }
+        }
+
+        section.global {
+
+            div.box {
                 display: flex;
                 width: 90vw;
                 margin: auto;
                 justify-content: center;
+                
+                div.imgBox {
+                    img {
+                        max-width: 500px;
+                        height: auto;
+                    }
+                }
+                
+
                 div.textBox {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     padding: 30px;
                     align-self: center;
-
-                    h5 {
+                    width: 40%;
+                    h3 {
                         font-size: 40px;
                     }
-
+                
                     p {
                         font-size: 15px;
                     }
 
-                    a {
-                        font-size: 18px;
-                        text-decoration: none;
+                    div.numberBox {
+                        display: flex;
 
-                        i {
-                            display: none;
+                        div.numberCell {
+                            display: flex;
+                            flex-direction: column;
+                            color: #40c4ff;
                         }
-                        
-                        &:hover {
-
-                            i {
-                                display: inline-block;
-                            }
-                        }
-                    }
-                }
-
-                div.imgBox {
-                    img {
-                        max-width: 500px;
-                        height: auto;
                     }
                 }
             }

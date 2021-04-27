@@ -68,8 +68,9 @@ div.container main section.adBox div.box div.textBox {
   justify-content: center;
   padding: 30px;
   align-self: center;
+  width: 40%;
 }
-div.container main section.adBox div.box div.textBox h5 {
+div.container main section.adBox div.box div.textBox h3 {
   font-size: 40px;
 }
 div.container main section.adBox div.box div.textBox p {
@@ -88,6 +89,38 @@ div.container main section.adBox div.box div.textBox a:hover i {
 div.container main section.adBox div.box div.imgBox img {
   max-width: 500px;
   height: auto;
+}
+div.container main section.global div.box {
+  display: flex;
+  width: 90vw;
+  margin: auto;
+  justify-content: center;
+}
+div.container main section.global div.box div.imgBox img {
+  max-width: 500px;
+  height: auto;
+}
+div.container main section.global div.box div.textBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  align-self: center;
+  width: 40%;
+}
+div.container main section.global div.box div.textBox h3 {
+  font-size: 40px;
+}
+div.container main section.global div.box div.textBox p {
+  font-size: 15px;
+}
+div.container main section.global div.box div.textBox div.numberBox {
+  display: flex;
+}
+div.container main section.global div.box div.textBox div.numberBox div.numberCell {
+  display: flex;
+  flex-direction: column;
+  color: #40c4ff;
 }
 
 div.container header div.jumbotron div.box {

@@ -1,0 +1,52 @@
+// variables
+
+
+
+
+// mixins
+
+@mixin boxRules {
+    display: flex;
+    width: 90vw;
+    margin: auto;
+    justify-content: center;
+}
+
+@mixin imgRules {
+    img {
+        max-width: 500px;
+        height: auto;
+    }
+}
+
+@mixin textRules {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    align-self: center;
+    width: 40%;
+    h3 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    a {
+        font-size: 18px;
+        text-decoration: none;
+
+        i {
+            display: none;
+        }
+        
+        &:hover {
+
+            i {
+                display: inline-block;
+            }
+        }
+    }
+}
