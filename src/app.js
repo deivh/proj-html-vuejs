@@ -1,5 +1,5 @@
 function init() {
-    console.log("Helo World")
+    console.log("Hello World")
 }
 
 init();
