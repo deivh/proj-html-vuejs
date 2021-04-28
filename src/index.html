@@ -7,8 +7,7 @@
     <!-- JQuery -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <!-- VueJS -->
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <!-- FontAwesome -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <!-- my css -->
     <link rel="stylesheet" href="main.css">
@@ -26,14 +25,22 @@
             <!-- ACTIVE NAVBAR IN VUE -->
             <!-- ALSO DROPDOWN MENU ON LI -->
             <nav>
-
+                <img src="" alt="logo">
+                <ul>
+                    <li v-for="menu in navbarMenus">
+                        <div v-if="menu.label == 'menu'">
+                            {{menu.content}}
+                        </div>
+                        <div v-if="menu.label == 'icon'" :class="menu.content"></div>
+                    </li>
+                </ul>
             </nav>
 
             <!-- SLIDER JUMBOTRON -->
             <div class="jumbotron">
                 <div class="box">
                     <i class="fas fa-angle-left" @click="removeClick"></i>            
-                    <img src="images[cont]" alt="">
+                    <img :src="jumbotronSlides[cont].img" alt="">
                     <i class="fas fa-angle-right" @click="getClick" ></i>
                 </div> 
                 <div class="jumboBlock">
@@ -129,7 +136,7 @@
                 <div class="profileFeedback">
                     <img src="img/profile.png" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi perspiciatis eius dolores recusandae earum! Quos harum</p>
-                    <h3>{{Nome Studente}}</h3>
+                    <!-- <h3>{{Nome Studente}}</h3> -->
                     <h4>Student</h4>
                 </div>
             </section>
@@ -171,10 +178,22 @@
                             Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt
                         </p>
                         <ul>
-                            <li>We enrich lives through learning.</li>
-                            <li>Maximizing potential through individual attention.</li>
-                            <li>The trusted name for specialized training.                                </li>
-                            <li>People teach. People learn. This is where they connect.</li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                We enrich lives through learning.
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Maximizing potential through individual attention.
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                The trusted name for specialized training.                                
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                People teach. People learn. This is where they connect.
+                            </li>
                         </ul>
                         <img src="img/content-box-1.png" alt="">
                     </div>
@@ -201,7 +220,7 @@
                                     </div>
                                 </div>
                                 <h4>
-                                    {{author}}
+                                    <!-- {{author}} -->
                                 </h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima commodi</p>
                                 <div class="infoData">
@@ -222,7 +241,7 @@
                                     </div>
                                 </div>
                                 <h4>
-                                    {{author}}
+                                    <!-- {{author}} -->
                                 </h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima commodi</p>
                                 <div class="infoData">
@@ -243,7 +262,7 @@
                                     </div>
                                 </div>
                                 <h4>
-                                    {{author}}
+                                    <!-- {{author}} -->
                                 </h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima commodi</p>
                                 <div class="infoData">
@@ -268,8 +287,8 @@
                     <div class="profileBox">
                         <div class="profileCard">
                             <img src="" alt="">
-                            <h3> {{name}}</h3>
-                            <h4>{{profession}}</h4>
+                            <!-- <h3> {{name}}</h3>
+                            <h4>{{profession}}</h4> -->
                             <p>Lorem ipsum oin gravida nibh vel veliauctor aliquenean sollicitudin, lorem quis bibendum auctor, nisi elit consequa</p>
                             <div class="socialBar">
 
