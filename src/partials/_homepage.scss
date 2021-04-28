@@ -143,5 +143,84 @@ div.container {
                 
              }
         }
+
+        section.sideMenuContent {
+            display: flex;
+            flex-direction: row;
+            width: 90vw;
+            margin: 20px auto;
+
+            div.sideList {
+                display: inline-block;
+                width: 40%;
+                border: 1px solid grey;
+            
+                ul {
+                    list-style-type: none;
+                    
+                    li {
+                        width: 100%;
+                        border: 1px solid grey;
+                        padding: 40px;
+                        font-size: 25px;
+                        font-weight: bold;
+
+                        &.active {
+                            border-left: 2px solid blue;
+                            background-color: lightgrey;
+                        }
+                    }
+                }
+            }
+
+            div.contentBox {
+                display: inline-block;
+                padding: 20px;
+                width: 55%;
+                h2 {
+                    margin-bottom: 30px;
+                    font-size: 35px;
+                    font-weight: bold;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+
+                ul {
+                    list-style-type: none;  
+                }
+
+                img {
+                    width: 100px;
+                }
+            }
+        }
+
+        section.sliderOffers {
+            background-image: url("img/slider-offers-bg.png");
+            background-size: cover;
+
+            div.sliderBox {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 90vw;
+                margin: auto;
+                
+                h2 {
+                    align-self: center;                
+                }
+
+                h5 {
+                    align-self: center;
+                }
+                div.slider {
+    
+                }
+                
+            }
+
+        }
     }
 }
