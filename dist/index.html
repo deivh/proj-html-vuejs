@@ -17,7 +17,7 @@
     <title>ICademy</title>
 </head>
 <body>
-    <div class="container">
+    <div id="appC" class="container">
 
 
         <!-- HEADER -->
@@ -33,7 +33,7 @@
             <div class="jumbotron">
                 <div class="box">
                     <i class="fas fa-angle-left" @click="removeClick"></i>            
-                    <img :src="images[cont]" alt="">
+                    <img src="images[cont]" alt="">
                     <i class="fas fa-angle-right" @click="getClick" @click="slider"></i>
                 </div> 
                 <div class="jumboBlock">
@@ -136,17 +136,114 @@
 
             <!-- FIFTH SECTION - ACTIVE MENU  -->
             <section class="sideMenuContent">
+                <div class="menu">
+                    <div class="sideList">
+                        <ul>
+                            <li>
+                                What we do
+                            </li>
 
+                            <li>
+                                Degree Programme
+                            </li>
+
+                            <li>
+                                Career Achievements
+                            </li>
+
+                            <li>
+                                Personal Management
+                            </li>
+
+                            <li>
+                                Steps to success
+                            </li>
+
+                            <li>
+                                Knowledge Transfer
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="contentBox">
+                        <h2>Learning Possibilities</h2>
+                        <p>
+                            Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt
+                        </p>
+                        <ul>
+                            <li>We enrich lives through learning.</li>
+                            <li>Maximizing potential through individual attention.</li>
+                            <li>The trusted name for specialized training.                                </li>
+                            <li>People teach. People learn. This is where they connect.</li>
+                        </ul>
+                        <img src="img/content-box-1.png" alt="">
+                    </div>
+                </div>
             </section>
 
             <!-- SIXTH SECTION - SECOND SLIDER 3x1 ROW WITH OFFERS -->
             <section class="sliderOffers">
-
+                <div class="sliderBox">
+                    <h2>
+                        Popular Online Courses
+                    </h2>
+                    <h5>
+                        Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elit
+                    </h5>
+                    <div class="slider">
+                        <div class="row">
+                            <div class="offerCard">
+                                <img src="" alt="">
+                                <div class="titleLabel">
+                                    <h3>Business English</h3>
+                                    <div class="price">
+                                        $20
+                                    </div>
+                                </div>
+                                <h4>
+                                    {{author}}
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima commodi</p>
+                                <div class="infoData">
+                                    <div class="people">
+                                        1
+                                    </div>
+                                    <div class="spec">
+                                        Language
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="offerCard">
+                                
+                            </div>
+                            <div class="offerCard">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!-- SEVENTH SECTION - STATIC TUTOR DISPLAY -->
             <section class="tutor">
+                <div class="tutorBox">
+                    <h2>The Best Tutors in Town</h2>
+                    <p>Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elit</p>
+                    <div class="profileBox">
+                        <div class="profileCard">
+                            <img src="" alt="">
+                            <h3> {{name}}</h3>
+                            <h4>{{profession}}</h4>
+                            <p>Lorem ipsum oin gravida nibh vel veliauctor aliquenean sollicitudin, lorem quis bibendum auctor, nisi elit consequa</p>
+                            <div class="socialBar">
 
+                            </div>
+                        </div>
+
+                        <div class="profileCard"></div>
+                        <div class="profileCard"></div>
+                    </div>
+                </div>
             </section>
 
             <!-- EIGTH SECTION - PRICE PLAN SELECTION, GRID (NOT A TABLE I SUPPOSE)-->
@@ -156,7 +253,7 @@
 
             <!-- NINTH SECTION - PARTNERS' LOGOS -->
             <section class="logoPartner">
-
+                
             </section>
         </main>
 

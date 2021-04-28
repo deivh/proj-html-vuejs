@@ -17,7 +17,7 @@
     <title>ICademy</title>
 </head>
 <body>
-    <div class="container">
+    <div id="appC" class="container">
 
 
         <!-- HEADER -->
@@ -33,7 +33,7 @@
             <div class="jumbotron">
                 <div class="box">
                     <i class="fas fa-angle-left" @click="removeClick"></i>            
-                    <img :src="images[cont]" alt="">
+                    <img src="images[cont]" alt="">
                     <i class="fas fa-angle-right" @click="getClick" @click="slider"></i>
                 </div> 
                 <div class="jumboBlock">
@@ -136,7 +136,11 @@
 
             <!-- FIFTH SECTION - ACTIVE MENU  -->
             <section class="sideMenuContent">
-
+                <div class="menu">
+                    <div class="sideList">
+                        
+                    </div>
+                </div>
             </section>
 
             <!-- SIXTH SECTION - SECOND SLIDER 3x1 ROW WITH OFFERS -->
