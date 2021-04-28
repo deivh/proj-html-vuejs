@@ -61,29 +61,9 @@
 
             <!-- FIRST SECTION - SERVICES -->
             <section class="services">
-                <div class="serviceCard">
-                    <img src="img/service-card-1.png" alt="">
-                    <h5>Languages</h5>
-                </div>
-                <div class="serviceCard">
-                    <img src="img/service-card-2.png" alt="">
-                    <h5>Software</h5>
-                </div>
-                <div class="serviceCard">
-                    <img src="img/service-card-3.png" alt="">
-                    <h5>Business</h5>
-                </div>
-                <div class="serviceCard">
-                    <img src="img/service-card-4.png" alt="">
-                    <h5>Chemistry</h5>
-                </div>
-                <div class="serviceCard">
-                    <img src="img/service-card-5.png" alt="">
-                    <h5>Science</h5>
-                </div>
-                <div class="serviceCard">
-                    <img src="img/service-card-6.png" alt="">
-                    <h5>DIY&Craft</h5>
+                <div v-for="service in servicesInfo" class="serviceCard">
+                    <img :src="service.img" alt="">
+                    <h5>{{service.label}}</h5>
                 </div>
             </section>
 
@@ -134,10 +114,12 @@
             <!-- DA FARE IN VUE DINAMICO -->
             <section class="sliderProfile">
                 <div class="profileFeedback">
-                    <img src="img/profile.png" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi perspiciatis eius dolores recusandae earum! Quos harum</p>
-                    <!-- <h3>{{Nome Studente}}</h3> -->
-                    <h4>Student</h4>
+                    <i class="fas fa-angle-left" @click="removeClick"></i>            
+                    <img :src="sliderProfileInfo[cont].img" alt="">
+                    <p>{{sliderProfileInfo[cont].text}} </p>
+                    <h3>{{sliderProfileInfo[cont].name}}</h3>
+                    <h4>{{sliderProfileInfo[cont].profession}}</h4>
+                    <i class="fas fa-angle-right" @click="getClick" ></i>
                 </div>
             </section>
 
@@ -211,66 +193,24 @@
                     </h5>
                     <div class="slider">
                         <div class="row">
-                            <div class="offerCard">
-                                <img src="" alt="">
+                            <div v-for="offer in offerSliderInfo" class="offerCard">
+                                <img :src="offer.img" alt="">
                                 <div class="titleLabel">
-                                    <h3>Business English</h3>
+                                    <h3>{{offer.offer}}</h3>
                                     <div class="price">
-                                        $20
+                                        {{offer.price}}
                                     </div>
                                 </div>
                                 <h4>
-                                    <!-- {{author}} -->
+                                    {{offer.author}}
                                 </h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima commodi</p>
                                 <div class="infoData">
                                     <div class="people">
-                                        1
+                                        {{offer.tutorNumber}}
                                     </div>
                                     <div class="spec">
-                                        Language
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="offerCard">
-                                <img src="" alt="">
-                                <div class="titleLabel">
-                                    <h3>Business English</h3>
-                                    <div class="price">
-                                        $20
-                                    </div>
-                                </div>
-                                <h4>
-                                    <!-- {{author}} -->
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima commodi</p>
-                                <div class="infoData">
-                                    <div class="people">
-                                        1
-                                    </div>
-                                    <div class="spec">
-                                        Language
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="offerCard">
-                                <img src="" alt="">
-                                <div class="titleLabel">
-                                    <h3>Business English</h3>
-                                    <div class="price">
-                                        $20
-                                    </div>
-                                </div>
-                                <h4>
-                                    <!-- {{author}} -->
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima commodi</p>
-                                <div class="infoData">
-                                    <div class="people">
-                                        1
-                                    </div>
-                                    <div class="spec">
-                                        Language
+                                        {{offer.subject}}
                                     </div>
                                 </div>
                             </div>
@@ -285,18 +225,17 @@
                     <h2>The Best Tutors in Town</h2>
                     <p>Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elit</p>
                     <div class="profileBox">
-                        <div class="profileCard">
-                            <img src="" alt="">
-                            <!-- <h3> {{name}}</h3>
-                            <h4>{{profession}}</h4> -->
+                        <div v-for="tutor in tutorInfo"class="profileCard">
+                            <img :src="tutor.img" alt="foto tutor">
+                            <h3> {{tutor.name}}</h3>
+                            <h4>Teacher</h4> 
                             <p>Lorem ipsum oin gravida nibh vel veliauctor aliquenean sollicitudin, lorem quis bibendum auctor, nisi elit consequa</p>
                             <div class="socialBar">
-
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-facebook-f"></i>
                             </div>
                         </div>
-
-                        <div class="profileCard"></div>
-                        <div class="profileCard"></div>
                     </div>
                 </div>
             </section>
@@ -307,17 +246,92 @@
                 <p>Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci</p>
                 <table>
                     <tr>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
+                        <th>
+                            Save up to 40% by paying weekly
+                        </th>
+                        <!-- standard price -->
+                        <th>
+                            <img src="img/table-icon-s.png" alt="">
+                            <h3>
+                                Standard
+                            </h3>
+                            <h4>
+                                $12
+                            </h4>
+                        </th>
+                        <!-- professional price -->
+                        <th>
+                            <img src="img/table-icon-p.png" alt="">
+                            <h3>
+                                Professional
+                            </h3>
+                            <h4>
+                                $59
+                            </h4>
+                        </th>
+                        <!-- advanced price -->
+                        <th>
+                            <img src="img/table-icon-a.png" alt="">
+                            <h3>
+                                Advanced
+                            </h3>
+                            <h4>
+                                $88
+                            </h4>
+                        </th>
+                    </tr>
+                    <tr v-for="row in pricingPlan">
+                        <td>
+                            {{row.name}}
+                        </td>
+
+                        <td  v-if="row.name=='Number of Courses' || row.name=='Time'"  >
+                            {{row.standard}}
+                        </td>
+
+                        <td v-else :class="row.standard"> 
+                        </td>
+
+                        <td v-if="row.name=='Number of Courses' || row.name=='Time'" >
+                            {{row.professional}}
+                        </td>
+
+                        <td v-else :class="row.professional"></td>
+
+                        <td v-if="row.name=='Number of Courses' || row.name=='Time'" >
+                            {{row.advanced}}
+                        </td>
+
+                        <td v-else :class="row.advanced"></td>
+                    </tr>
+                    <tr class="buttons">
+
+                        <td class="blank"></td>
+                        <td>
+                            <div class="button">
+                                GET IT NOW
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="button active">
+                                GET IT NOW
+                            </div>
+                        </td>
+                        
+                        <td>
+                            <div class="button">
+                                GET IT NOW
+                            </div>
+                        </td>
+                        
                     </tr>
                 </table>
             </section>
 
             <!-- NINTH SECTION - PARTNERS' LOGOS -->
             <section class="logoPartner">
-
+                <img v-for="partner in partnerLogos" :src="partner" alt="">
             </section>
         </main>
 

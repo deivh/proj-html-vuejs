@@ -1,5 +1,14 @@
+div.container header nav {
+  display: flex;
+  position: fixed;
+  z-index: 99;
+}
+div.container header nav ul {
+  width: 100%;
+  display: flex;
+  align-content: space-between;
+}
 div.container header div.jumbotron {
-  background-image: url("img/jumbotron-1.jpg");
   height: 90vh;
   background-size: cover;
   display: flex;
@@ -208,6 +217,19 @@ div.container main section.sliderOffers div.sliderBox div.slider {
 div.container main section.sliderOffers div.sliderBox div.slider div.offerCard {
   display: inline-block;
   width: 30%;
+}
+div.container main section.tutor div.tutorBox {
+  display: flex;
+  flex-direction: column;
+}
+div.container main section.tutor div.tutorBox div.profileBox {
+  display: flex;
+}
+div.container main section.pricing table tr {
+  display: flex;
+}
+div.container main section.pricing table tr td {
+  width: 70px;
 }
 
 div.container header div.jumbotron div.box {

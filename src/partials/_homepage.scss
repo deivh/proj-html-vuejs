@@ -1,9 +1,19 @@
 div.container {
 
     header {
+        nav {
+            display: flex;
+            position: fixed;
+            z-index: 99;
+
+            ul {
+                width: 100%;
+                display: flex;
+                align-content: space-between;
+            }
+        }
 
         div.jumbotron {
-            background-image: url("img/jumbotron-1.jpg");
             height: 90vh;
             background-size: cover;
             display: flex;
@@ -227,6 +237,30 @@ div.container {
                 
             }
 
+        }
+
+        section.tutor {
+            div.tutorBox {
+                display: flex;
+                flex-direction: column;
+
+                div.profileBox {
+                    display: flex;
+                }
+            }
+        }
+
+        section.pricing {
+
+            table {
+
+                tr {
+                    display: flex;
+                    td {
+                        width: 70px;
+                    }
+                }
+            }
         }
     }
 }
