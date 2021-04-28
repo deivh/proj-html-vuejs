@@ -200,6 +200,16 @@ div.container main section.sliderOffers div.sliderBox h2 {
 div.container main section.sliderOffers div.sliderBox h5 {
   align-self: center;
 }
+div.container main section.sliderOffers div.sliderBox div.slider {
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+div.container main section.sliderOffers div.sliderBox div.slider div.offerCard {
+  display: inline-block;
+  width: 30%;
+}
+
 div.container header div.jumbotron div.box {
   height: 90vh;
   width: 100%;

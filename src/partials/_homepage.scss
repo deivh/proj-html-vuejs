@@ -216,7 +216,13 @@ div.container {
                     align-self: center;
                 }
                 div.slider {
-    
+                    display: flex;
+                    width: 100%;
+                    margin: auto;
+                    div.offerCard {
+                        display: inline-block;
+                        width: 30%;
+                    }
                 }
                 
             }
