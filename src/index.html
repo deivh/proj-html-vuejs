@@ -47,7 +47,7 @@
                     <h2>
                         {{jumbotronSlides[cont].title}}
                     </h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat eveniet voluptatum reiciendis voluptate.</p>
+                    <p>{{jumbotronSlides[cont].text}}</p>
                     <div v-if="jumbotronSlides[cont].button == true" class="button">
                         REGISTER NOW
                     </div>
@@ -199,6 +199,7 @@
                     <div class="slider">
                             <div v-for="offer in offerSliderInfo" class="offerCard">
                                 <img :src="offer.img" alt="">
+                                <i class="far fa-heart"></i>
                                 <div class="titleLabel">
                                     <h3>{{offer.offer}}</h3>
                                     <div class="price" :class="offer.price">

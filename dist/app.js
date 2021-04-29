@@ -43,19 +43,19 @@ function initVue() {
       // JUMBOTRON DATA
       'jumbotronSlides': [{
         'title': 'Contemporary Ideas',
-        'text': 'Lorem ipsum',
+        'text': 'Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.',
         'button': true,
         'videoplayer': false,
         'img': "img/jumbotron-1.jpg"
       }, {
-        'title': 'Contemporary Ideas',
-        'text': 'Lorem ipsum',
+        'title': 'Accelerate your Career',
+        'text': 'Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequa',
         'button': true,
         'videoplayer': false,
         'img': "img/jumbotron-2.jpg"
       }, {
-        'title': 'Contemporary Ideas',
-        'text': 'Lorem ipsum',
+        'title': 'Premium Education',
+        'text': 'Ipsutis sem nibh id eis sed odio sit amet nibh vulputate cursus mauris.',
         'button': false,
         'videoplayer': true,
         'img': "img/jumbotron-3.jpg"
