@@ -14,11 +14,11 @@ div.container {
                 position: absolute;
 
                 img {
-                    object-fit: cover;
+                    width: 100vw;
                 }
 
                 i {
-                    position: relative;
+                    position: absolute;
                     font-size: 40px;
                     color: lightgrey;
                     align-self: center;
@@ -29,6 +29,13 @@ div.container {
                         cursor: pointer;
                         color: grey;
                     }
+                }
+                i.fa-angle-right{
+                    right: 0
+                }
+
+                i.fa-angle-left {
+                    left: 0;
                 }
             }
         }

@@ -56,8 +56,8 @@ function initVue() {
       }, {
         'title': 'Contemporary Ideas',
         'text': 'Lorem ipsum',
-        'button': true,
-        'videoplayer': false,
+        'button': false,
+        'videoplayer': true,
         'img': "img/jumbotron-3.jpg"
       }],
       'img': '',
@@ -125,13 +125,13 @@ function initVue() {
       // TUTOR BOX DATA
       'tutorInfo': [{
         'name': 'Brenda Harris',
-        'img': 'img/tutor-1.png'
+        'img': 'img/tutor-1.jpg'
       }, {
         'name': 'Lisa Griffin',
-        'img': 'img/tutor-2.png'
+        'img': 'img/tutor-2.jpg'
       }, {
         'name': 'Victor Green',
-        'img': 'img/tutor-3.png'
+        'img': 'img/tutor-3.jpg'
       }],
       // PRICING PLAN DATA
       'pricingPlan': [{

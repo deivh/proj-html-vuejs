@@ -1,27 +1,42 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);
 div.container header nav {
   display: flex;
   position: fixed;
   z-index: 99;
+  width: 100vw;
 }
 div.container header nav ul {
   width: 100%;
   display: flex;
-  align-content: space-between;
+  justify-content: flex-end;
+  float: right;
+}
+div.container header nav ul li {
+  display: flex;
+  color: white;
+  padding: 15px;
 }
 div.container header div.jumbotron {
   height: 90vh;
   background-size: cover;
   display: flex;
   justify-content: center;
+  color: white;
 }
 div.container header div.jumbotron div.jumboBlock {
+  z-index: 25;
   display: flex;
   flex-direction: column;
   align-self: center;
 }
 div.container header div.jumbotron div.jumboBlock h2 {
+  margin: 20px 6px;
+  padding: 20px;
   text-align: center;
   font-size: 60px;
+}
+div.container header div.jumbotron div.jumboBlock p {
+  margin: 20px 6px;
 }
 div.container header div.jumbotron div.jumboBlock div.button {
   font-size: 15px;
@@ -37,6 +52,22 @@ div.container header div.jumbotron div.jumboBlock div.button {
 }
 div.container header div.jumbotron div.jumboBlock div.button:hover {
   cursor: pointer;
+  background-color: #3bbaf5;
+}
+div.container header div.jumbotron div.jumboBlock div.player {
+  margin: 6px;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+div.container header div.jumbotron div.jumboBlock div.player i {
+  color: #3e3e3e;
+  align-self: center;
 }
 div.container main {
   background-color: white;
@@ -48,6 +79,8 @@ div.container main section.services {
   justify-content: center;
 }
 div.container main section.services div.serviceCard {
+  width: 180px;
+  height: 190px;
   margin: 20px;
   display: flex;
   flex-direction: column;
@@ -225,11 +258,102 @@ div.container main section.tutor div.tutorBox {
 div.container main section.tutor div.tutorBox div.profileBox {
   display: flex;
 }
+div.container main section.pricing table {
+  width: 90vw;
+  margin: auto;
+}
 div.container main section.pricing table tr {
   display: flex;
 }
-div.container main section.pricing table tr td {
-  width: 70px;
+div.container main section.pricing table tr td, div.container main section.pricing table tr th {
+  min-width: 350px;
+  height: 60px;
+  border: 1px solid #f3f0f0;
+  font-size: 22px;
+  align-self: center;
+  padding: 20px;
+  text-align: center;
+}
+div.container main section.pricing table tr td.fas.fa-check {
+  color: green;
+}
+div.container main section.pricing table tr th {
+  background-color: #f7fdff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  height: 200px;
+  border-top: 3px solid #9ce0ff;
+}
+div.container main section.pricing table tr th img {
+  width: 75px;
+  align-self: center;
+}
+div.container main section.pricing table tr th#firstBox {
+  background-color: white;
+  justify-content: flex-end;
+  font-size: 26px;
+}
+div.container main section.pricing table tr th.active {
+  border-top: 3px solid #3bbaf5;
+}
+div.container main section.pricing table tr td.blank {
+  border: 0;
+}
+div.container main section.pricing table tr td.last {
+  background-color: #f7fdff;
+  height: 120px;
+}
+div.container main section.pricing table tr td.last div.button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-self: center;
+  padding: 10px;
+  border: 1px solid #f3f0f0;
+}
+div.container main section.pricing table tr td.last div.button:hover {
+  background-color: #40c4ff;
+  color: white;
+}
+div.container main section.pricing table tr td.last div.button.active {
+  background-color: #40c4ff;
+  color: white;
+}
+div.container main section.pricing table tr td.last div.button.active:hover {
+  background-color: #3bbaf5;
+}
+div.container footer {
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+}
+div.container footer div.menuContacts {
+  display: flex;
+  color: whitesmoke;
+  width: 90vw;
+  margin: 20px auto;
+}
+div.container footer div.menuContacts ul {
+  list-style-type: none;
+  width: 25%;
+  padding: 25px;
+}
+div.container footer div.menuContacts ul li {
+  padding: 10px;
+}
+div.container footer div.menuContacts ul li.first {
+  font-size: 25px;
+  font-weight: bold;
+}
+div.container footer div.menuContacts ul li#footerLogo img {
+  width: 140px;
+  height: auto;
+}
+div.container footer div.menuContacts ul#map img {
+  width: 350px;
+  height: auto;
 }
 
 div.container header div.jumbotron div.box {
@@ -241,11 +365,10 @@ div.container header div.jumbotron div.box {
   position: absolute;
 }
 div.container header div.jumbotron div.box img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 100vw;
 }
 div.container header div.jumbotron div.box i {
-  position: relative;
+  position: absolute;
   font-size: 40px;
   color: lightgrey;
   align-self: center;
@@ -255,6 +378,12 @@ div.container header div.jumbotron div.box i:hover {
   cursor: pointer;
   color: grey;
 }
+div.container header div.jumbotron div.box i.fa-angle-right {
+  right: 0;
+}
+div.container header div.jumbotron div.box i.fa-angle-left {
+  left: 0;
+}
 div.container main div.sliderProfile {
   background-image: url("img/slider-profile-bg.png");
 }
@@ -263,4 +392,5 @@ div.container main div.sliderProfile {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }

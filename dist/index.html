@@ -45,11 +45,14 @@
                 </div> 
                 <div class="jumboBlock">
                     <h2>
-                        Contemporary ideas
+                        {{jumbotronSlides[cont].title}}
                     </h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat eveniet voluptatum reiciendis voluptate.</p>
-                    <div class="button">
+                    <div v-if="jumbotronSlides[cont].button == true" class="button">
                         REGISTER NOW
+                    </div>
+                    <div v-if="jumbotronSlides[cont].videoplayer == true" class="player">                  
+                        <i class="fas fa-play"></i>  
                     </div>
                 </div>
             </div>
@@ -246,7 +249,7 @@
                 <p>Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci</p>
                 <table>
                     <tr>
-                        <th>
+                        <th id="firstBox">
                             Save up to 40% by paying weekly
                         </th>
                         <!-- standard price -->
@@ -260,7 +263,7 @@
                             </h4>
                         </th>
                         <!-- professional price -->
-                        <th>
+                        <th class="active">
                             <img src="img/table-icon-p.png" alt="">
                             <h3>
                                 Professional
@@ -307,19 +310,19 @@
                     <tr class="buttons">
 
                         <td class="blank"></td>
-                        <td>
+                        <td class="last">
                             <div class="button">
                                 GET IT NOW
                             </div>
                         </td>
 
-                        <td>
+                        <td class="last">
                             <div class="button active">
                                 GET IT NOW
                             </div>
                         </td>
                         
-                        <td>
+                        <td class="last">
                             <div class="button">
                                 GET IT NOW
                             </div>
@@ -341,8 +344,8 @@
             <!-- ACTIVE CONTACT LIST WITH VUE -->
             <div class="menuContacts">
                 <ul>
-                    <li>
-                        <img src="img/icademy-logo.png" alt="logo icademy">
+                    <li id="footerLogo">
+                        <img src="img/logo-light.png" alt="logo icademy">
                     </li>
                     <li v-for="data in footerLists[0]">
                         {{data}}
@@ -350,6 +353,10 @@
                 </ul>
 
                 <ul>
+                    <li class="first">
+                        Popular Courses
+                    </li>
+
                     <li v-for="data in footerLists[1]">
                         {{data}}
                     </li>
@@ -357,8 +364,22 @@
 
                 
                 <ul>
+                    <li class="first">
+                        Support
+                    </li>
+
                     <li v-for="data in footerLists[2]">
                         {{data}}
+                    </li>
+                </ul>
+
+                <ul id="map">
+                    <li class="first">
+                        Flexible Learning
+                    </li>
+
+                    <li>
+                        <img src="img/footer-img-1.png" alt="foto mappa">
                     </li>
                 </ul>
             </div>

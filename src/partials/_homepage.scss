@@ -5,11 +5,18 @@ div.container {
             display: flex;
             position: fixed;
             z-index: 99;
+            width: 100vw;
 
             ul {
                 width: 100%;
                 display: flex;
-                align-content: space-between;
+                justify-content: flex-end;
+                float: right;
+                li {
+                    display: flex;
+                    color: white;
+                    padding: 15px;
+                }
             }
         }
 
@@ -17,19 +24,23 @@ div.container {
             height: 90vh;
             background-size: cover;
             display: flex;
-            
             justify-content: center;
-            
+            color: white;
                 div.jumboBlock {
-
+                    z-index: 25;
                     display: flex;
                     flex-direction: column;
+        
                     align-self: center;
                     h2 {
+                        margin: 20px 6px;
+                        padding: 20px;
                         text-align: center;
                         font-size: 60px;
                     }
-
+                    p {
+                        margin: 20px 6px;
+                    }
                     div.button {
                         font-size: 15px;
                         font-weight: bolder;
@@ -41,6 +52,23 @@ div.container {
                         background-color: #40c4ff;
                         &:hover {
                             cursor: pointer;
+                            background-color: #3bbaf5;
+                        }
+                    }
+                    div.player {
+                        margin: 6px;
+                        width: 60px;
+                        height: 60px;
+                        background-color: white;
+                        border-radius: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-self: center;
+
+                        i {
+                            color: #3e3e3e;
+                            align-self: center;
                         }
                     }
                 }
@@ -58,6 +86,8 @@ div.container {
             justify-content: center;
 
             div.serviceCard{
+                width: 180px;
+                height: 190px;
                 margin: 20px;
                 display: flex;
                 flex-direction: column;
@@ -253,13 +283,121 @@ div.container {
         section.pricing {
 
             table {
-
+                width: 90vw;
+                margin: auto;
                 tr {
                     display: flex;
-                    td {
-                        width: 70px;
+                    td , th{
+                        min-width: 350px;
+                        height: 60px;
+                        border: 1px solid rgb(243, 240, 240);
+                        font-size: 22px;
+                        align-self: center;
+                        padding: 20px;
+                        text-align: center;
+                    }
+                    td.fas.fa-check{
+                        color: green;
+                    }
+                    
+                    th {
+                        background-color: #f7fdff;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        padding: 15px;
+                        height: 200px;
+                        border-top: 3px solid #9ce0ff;
+
+                        img {
+                            width: 75px;
+                           align-self: center;
+                        }
+                    }
+                    th#firstBox {
+                        background-color: white;
+                        justify-content: flex-end;
+                        font-size: 26px;
+                    }
+
+                    th.active {
+                        border-top: 3px solid #3bbaf5;
+                    }
+                    td.blank {
+                        border: 0;
+                    }
+
+                    td.last {
+                        background-color: #f7fdff;
+                        height: 120px;
+                        div.button {
+                            width: fit-content;
+                            align-self: center;
+                            padding: 10px;
+                            border: 1px solid rgb(243, 240, 240);
+                            &:hover {
+                                background-color: #40c4ff;
+                                color: white; 
+                            }
+                            
+                        }
+                        div.button.active {
+                            background-color: #40c4ff;
+                            color: white;
+                            &:hover {
+                                background-color: #3bbaf5;
+                            }
+                        }
                     }
                 }
+            }
+        }
+    }
+
+    footer {
+        background-color: #222222;
+        display: flex;
+        flex-direction: column;
+
+
+        div.menuContacts {
+            display: flex;
+            color: whitesmoke;
+            width: 90vw;
+            margin: 20px auto;
+
+            ul{
+                list-style-type: none;
+                width: 25%;
+                padding: 25px;
+
+                li {
+                    padding: 10px;
+
+
+                }
+
+                li.first {
+                    font-size: 25px;
+                    font-weight: bold;
+                }
+
+
+
+                li#footerLogo {
+                    img {
+                        width: 140px;
+                        height: auto;
+                    }
+
+                }
+            }
+            
+            ul#map {
+                img {
+                     width: 350px;
+                     height: auto;
+                    }
             }
         }
     }
