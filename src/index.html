@@ -340,7 +340,27 @@
 
             <!-- ACTIVE CONTACT LIST WITH VUE -->
             <div class="menuContacts">
+                <ul>
+                    <li>
+                        <img src="img/icademy-logo.png" alt="logo icademy">
+                    </li>
+                    <li v-for="data in footerLists[0]">
+                        {{data}}
+                    </li>
+                </ul>
 
+                <ul>
+                    <li v-for="data in footerLists[1]">
+                        {{data}}
+                    </li>
+                </ul>
+
+                
+                <ul>
+                    <li v-for="data in footerLists[2]">
+                        {{data}}
+                    </li>
+                </ul>
             </div>
 
             <!-- LAST SCRIPT, MAYBE COPYRIGHT THINGS -->

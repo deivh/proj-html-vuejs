@@ -222,29 +222,28 @@ function initVue() {
                 'studycentral.png'
               ],
               'footerLists' : [
-                {
-                  'logo' : 'img/icademy-logo.png',
-                  'text' : 'Providing Life Changing Experiences Through Education. Class That Fit Your Busy Life. Closer to Home',
-                  'number' : '1-677-124-44227',
-                  'timeframe' : 'Mon - Sat 8.00 - 18.00'
-                },
-                {
-                  'name' : 'Popular Courses',
-                  'be' : 'Business English',
-                  'teachbe': 'Preston Marshall',
-                  'sc' : 'Social Computing',
-                  'teachsc' : 'David Sanders',
-                  'ls' : 'Learn Spanish',
-                  'teachls' : 'Jennie King'
-                },
-                {
-                  'name' : 'Support',
-                  'text1' : 'User Dashboard',
-                  'text2' : 'Contact Us',
-                  'text3' : 'FAQ',
-                  'text4' : 'Course Offer',
-                  'text5' : 'Events'
-                }
+                [
+                  'Providing Life Changing Experiences Through Education. Class That Fit Your Busy Life. Closer to Home',
+                  '1-677-124-44227',
+                  'Mon - Sat 8.00 - 18.00'
+                ],
+                [
+                  'Popular Courses',
+                  'Business English',
+                  'Preston Marshall',
+                  'Social Computing',
+                  'David Sanders',
+                  'Learn Spanish',
+                  'Jennie King'
+                ],
+                [
+                  'Support',
+                  'User Dashboard',
+                  'Contact Us',
+                  'FAQ',
+                  'Course Offer',
+                  'Events'
+                ]
               ],
 
         },
