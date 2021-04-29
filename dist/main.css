@@ -536,9 +536,15 @@ div.container footer div.menuContacts ul {
 div.container footer div.menuContacts ul li {
   padding: 10px;
 }
+div.container footer div.menuContacts ul li:hover {
+  color: #40c4ff;
+}
 div.container footer div.menuContacts ul li.first {
   font-size: 25px;
   font-weight: bold;
+}
+div.container footer div.menuContacts ul li.first:hover {
+  color: white;
 }
 div.container footer div.menuContacts ul li#footerLogo img {
   width: 140px;
@@ -623,4 +629,8 @@ div.container main div.sliderProfile {
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
+}
+
+body {
+  height: 100%;
 }

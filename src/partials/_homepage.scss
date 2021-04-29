@@ -582,12 +582,19 @@ div.container {
                 li {
                     padding: 10px;
 
+                    &:hover {
+                        color: #40c4ff;
+                    }
 
                 }
 
                 li.first {
                     font-size: 25px;
                     font-weight: bold;
+
+                    &:hover {
+                        color: white;
+                    }
                 }
 
 

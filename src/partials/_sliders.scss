@@ -44,6 +44,35 @@ div.container {
     main {
         div.sliderProfile {
             background-image: url("img/slider-profile-bg.png");
+            // parallax
+            // position: relative;
+            // width: 100vw;
+            // height: auto;
+            // overflow-x: hidden;
+            // overflow-y: scroll;
+            // perspective: 8px;
+            // perspective-origin: 0%;
+            // display: flex;
+
+            // .background {
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     width: 100%;
+            //     height: 100%;
+            //     transform: translateZ(0px);
+            //     img {
+            //         width: 100vw;
+            //         height: auto;
+            //     }
+            // }
+
+            // .foreground {
+            //     margin-top: auto;
+            //     margin-bottom: 50px;
+            //     transform-origin: 0;
+            //     transform: translateZ(3px) scale(0.625);
+            // }
         }
     }
 }

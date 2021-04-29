@@ -116,15 +116,21 @@
             <!--  FOURTH SECTION - SLIDER PROFILES -->
             <!-- DA FARE IN VUE DINAMICO -->
             <section class="sliderProfile">
-                <div class="profileFeedback">
-                    <img :src="sliderProfileInfo[cont].img" alt="">
-                    <p>{{sliderProfileInfo[cont].text}} </p>
-                    <h3>{{sliderProfileInfo[cont].name}}</h3>
-                    <h4>{{sliderProfileInfo[cont].profession}}</h4>
-                    <div>
-                        <i v-for="circle in sliderProfileInfo" class="far fa-circle" @click="getClick" ></i>
-                    </div>
+                <!-- <div class="background">
+                    <img class="bg-img" src="img/slider-profile-bg.png" alt="">
+                </div> -->
 
+                <!-- <div class="foreground"> -->
+                    <div class="profileFeedback">
+                        <img :src="sliderProfileInfo[cont].img" alt="">
+                        <p>{{sliderProfileInfo[cont].text}} </p>
+                        <h3>{{sliderProfileInfo[cont].name}}</h3>
+                        <h4>{{sliderProfileInfo[cont].profession}}</h4>
+                        <div>
+                            <i v-for="circle in sliderProfileInfo" class="far fa-circle" @click="getClick" ></i>
+                        </div>
+    
+                    <!-- </div> -->
                 </div>
             </section>
 
