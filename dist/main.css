@@ -3,7 +3,12 @@ div.container header nav {
   display: flex;
   position: fixed;
   z-index: 99;
-  width: 100vw;
+  width: 100%;
+}
+div.container header nav img {
+  width: 150px;
+  height: auto;
+  padding: 15px;
 }
 div.container header nav ul {
   width: 100%;
@@ -15,6 +20,10 @@ div.container header nav ul li {
   display: flex;
   color: white;
   padding: 15px;
+  text-transform: uppercase;
+}
+div.container header nav ul li:hover {
+  color: #3bbaf5;
 }
 div.container header div.jumbotron {
   height: 90vh;
@@ -161,6 +170,7 @@ div.container main section.global div.box div.textBox div.numberBox {
 }
 div.container main section.global div.box div.textBox div.numberBox div.numberCell {
   display: flex;
+  padding: 5px 20px;
   flex-direction: column;
   color: #40c4ff;
 }
@@ -176,10 +186,26 @@ div.container main section.sliderProfile div.profileFeedback {
   height: 80vh;
   width: auto;
   margin: auto;
+  color: white;
 }
 div.container main section.sliderProfile div.profileFeedback * {
-  margin: 15px;
+  margin: 10px;
   align-self: center;
+}
+div.container main section.sliderProfile div.profileFeedback h3 {
+  font-size: 25px;
+  font-weight: bolder;
+}
+div.container main section.sliderProfile div.profileFeedback h4 {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+div.container main section.sliderProfile div.profileFeedback div {
+  display: flex;
+}
+div.container main section.sliderProfile div.profileFeedback div i:hover {
+  background-color: white;
+  border-radius: 50%;
 }
 div.container main section.sideMenuContent {
   display: flex;

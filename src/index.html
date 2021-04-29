@@ -25,7 +25,7 @@
             <!-- ACTIVE NAVBAR IN VUE -->
             <!-- ALSO DROPDOWN MENU ON LI -->
             <nav>
-                <img src="" alt="logo">
+                <img src="img/logo-light.png" alt="logo">
                 <ul>
                     <li v-for="menu in navbarMenus">
                         <div v-if="menu.label == 'menu'">
@@ -117,12 +117,14 @@
             <!-- DA FARE IN VUE DINAMICO -->
             <section class="sliderProfile">
                 <div class="profileFeedback">
-                    <i class="fas fa-angle-left" @click="removeClick"></i>            
                     <img :src="sliderProfileInfo[cont].img" alt="">
                     <p>{{sliderProfileInfo[cont].text}} </p>
                     <h3>{{sliderProfileInfo[cont].name}}</h3>
                     <h4>{{sliderProfileInfo[cont].profession}}</h4>
-                    <i class="fas fa-angle-right" @click="getClick" ></i>
+                    <div>
+                        <i v-for="circle in sliderProfileInfo" class="far fa-circle" @click="getClick" ></i>
+                    </div>
+
                 </div>
             </section>
 
