@@ -84,7 +84,7 @@ div.container main section.services div.serviceCard {
   margin: 20px;
   display: flex;
   flex-direction: column;
-  background-color: #9ce0ff;
+  background-color: #f2f8fc;
 }
 div.container main section.services div.serviceCard img {
   padding: 20px;
@@ -257,6 +257,10 @@ div.container main section.tutor div.tutorBox {
 }
 div.container main section.tutor div.tutorBox div.profileBox {
   display: flex;
+}
+div.container main section.tutor div.tutorBox div.profileBox div.profileCard img {
+  width: 200px;
+  height: 200px;
 }
 div.container main section.pricing table {
   width: 90vw;

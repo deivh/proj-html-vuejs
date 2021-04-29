@@ -91,7 +91,7 @@ div.container {
                 margin: 20px;
                 display: flex;
                 flex-direction: column;
-                background-color: #9ce0ff;
+                background-color: #f2f8fc;
                 
                 img {
                     padding: 20px;
@@ -275,7 +275,13 @@ div.container {
                 flex-direction: column;
 
                 div.profileBox {
-                    display: flex;
+                    display: flex; 
+                    div.profileCard {
+                        img {
+                            width: 200px;
+                            height: 200px;
+                        }
+                    }
                 }
             }
         }
