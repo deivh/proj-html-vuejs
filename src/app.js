@@ -215,11 +215,11 @@ function initVue() {
                 },
               ],
               'partnerLogos' : [
-                'educator.png',
-                'teach-hub.png',
-                'scholar.png',
-                'icademy.png',
-                'studycentral.png'
+                'img/educator.png',
+                'img/teach-hub.png',
+                'img/scholar.png',
+                'img/icademy.png',
+                'img/studycentral.png'
               ],
               'footerLists' : [
                 [

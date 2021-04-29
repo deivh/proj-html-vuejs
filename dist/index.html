@@ -190,19 +190,18 @@
             <!-- SIXTH SECTION - SECOND SLIDER 3x1 ROW WITH OFFERS -->
             <section class="sliderOffers">
                 <div class="sliderBox">
-                    <h2>
+                    <h2 id="offerTitle">
                         Popular Online Courses
                     </h2>
-                    <h5>
+                    <h5 id="offerText">
                         Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elit
                     </h5>
                     <div class="slider">
-                        <div class="row">
                             <div v-for="offer in offerSliderInfo" class="offerCard">
                                 <img :src="offer.img" alt="">
                                 <div class="titleLabel">
                                     <h3>{{offer.offer}}</h3>
-                                    <div class="price">
+                                    <div class="price" :class="offer.price">
                                         {{offer.price}}
                                     </div>
                                 </div>
@@ -212,14 +211,15 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima commodi</p>
                                 <div class="infoData">
                                     <div class="people">
+                                        <i class="fas fa-users"></i>
                                         {{offer.tutorNumber}}
                                     </div>
                                     <div class="spec">
+                                        <i class="fas fa-tag"></i>
                                         {{offer.subject}}
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </section>

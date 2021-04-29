@@ -219,11 +219,12 @@ div.container {
             flex-direction: row;
             width: 90vw;
             margin: 20px auto;
+            color: #959595;
 
             div.sideList {
                 display: inline-block;
                 width: 40%;
-                border: 1px solid grey;
+                border: 1px solid rgb(243, 240, 240);
             
                 ul {
                     list-style-type: none;
@@ -235,9 +236,9 @@ div.container {
                         font-size: 25px;
                         font-weight: bold;
 
-                        &.active {
-                            border-left: 2px solid blue;
-                            background-color: lightgrey;
+                        &.active, &:hover {
+                            border-left: 8px solid blue;
+                            background-color: #0707070e;
                         }
                     }
                 }
@@ -245,8 +246,15 @@ div.container {
 
             div.contentBox {
                 display: inline-block;
+                position: relative;
+                bottom: 110px;
+                // position: absolute;
                 padding: 20px;
                 width: 55%;
+
+                * {
+                    padding: 5px;
+                }
                 h2 {
                     margin-bottom: 30px;
                     font-size: 35px;
@@ -259,10 +267,18 @@ div.container {
 
                 ul {
                     list-style-type: none;  
+                    li {
+                        i {
+                            color: #3bbaf5;
+                        }
+                    }
                 }
 
                 img {
                     width: 100px;
+                    position: relative;
+                    bottom: 85px;
+                    float: right;
                 }
             }
         }
@@ -270,6 +286,7 @@ div.container {
         section.sliderOffers {
             background-image: url("img/slider-offers-bg.png");
             background-size: cover;
+            color: #959595;
 
             div.sliderBox {
                 display: flex;
@@ -278,20 +295,69 @@ div.container {
                 width: 90vw;
                 margin: auto;
                 
+                h2, h5 {
+                    color: #3e3e3e;
+                    align-self: center; 
+                    padding: 10px;               
+                }
+
                 h2 {
-                    align-self: center;                
+                    font-size: 3.2rem;
                 }
 
                 h5 {
-                    align-self: center;
+                    font-size: 1.16rem;
                 }
+
                 div.slider {
                     display: flex;
                     width: 100%;
                     margin: auto;
+                    justify-content: space-between;
+                    padding: 15px;
                     div.offerCard {
+                        border: 1px solid #efefef;
                         display: inline-block;
                         width: 30%;
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+
+                        div.titleLabel {
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 10px;
+                            h3 {
+                                font-size: 25px;
+                                color: black;
+                            }
+                            div.price {
+                                width: fit-content;
+                                background-color: blue;
+                            }
+                            div.FREE {
+                                width: fit-content;
+                                background-color: rgb(255, 255, 124);
+                            }
+                        }
+
+                        h4 {
+                            font-size: 20px;
+                            padding: 10px;
+                        }
+
+                        p {
+                            padding: 10px;
+                        }
+
+                        div.infoData {
+                            display: flex;
+                            padding: 10px;
+                            div {
+                                padding: 2px;
+                            }
+                        }
                     }
                 }
                 
@@ -300,16 +366,54 @@ div.container {
         }
 
         section.tutor {
+            color: #959595;
+            width: 90vw;
+            margin: 30px auto;
             div.tutorBox {
                 display: flex;
                 flex-direction: column;
+                justify-content: space-evenly;
+                * {
+                    align-self: center;
+                    padding: 7px;
+                }
 
+
+                h2 {
+                    color: #3e3e3e;
+                    font-size: 25px;
+                    font-weight: 900;
+                }
+
+                
                 div.profileBox {
                     display: flex; 
+                    justify-content: space-evenly;
                     div.profileCard {
+                        display: flex;
+                        flex-direction: column;
+
+                        *{
+                            align-self: center;
+                        }
+
+                        h3 {
+                            color: #3e3e3e
+                        }
+
+                        h4 {
+                            text-transform: uppercase;
+                        }
+
                         img {
-                            width: 200px;
-                            height: 200px;
+                            width: 170px;
+                            height: 170px;
+                        }
+                        div.socialBar {
+                            i:hover {
+                                cursor: pointer;
+                                color: #3bbaf5;
+                            }
                         }
                     }
                 }
@@ -317,7 +421,15 @@ div.container {
         }
 
         section.pricing {
+            color: #959595;
+            h2, p {
+                text-align: center;
+                padding: 8px;
+            }
 
+            h2 {
+                color: #3e3e3e;
+            }
             table {
                 width: 90vw;
                 margin: auto;
@@ -344,6 +456,7 @@ div.container {
                         padding: 15px;
                         height: 200px;
                         border-top: 3px solid #9ce0ff;
+                        color: #3e3e3e;
 
                         img {
                             width: 75px;
@@ -366,6 +479,8 @@ div.container {
                     td.last {
                         background-color: #f7fdff;
                         height: 120px;
+                        display: flex;
+                        justify-content: center;
                         div.button {
                             width: fit-content;
                             align-self: center;
@@ -386,6 +501,18 @@ div.container {
                         }
                     }
                 }
+            }
+        }
+
+        section.logoPartner {
+            display: flex;
+            width: 90vw;
+            margin: 20px auto;
+            justify-content: space-evenly;
+            padding: 20px;
+
+            img:hover {
+                opacity: 0.85;
             }
         }
     }

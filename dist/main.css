@@ -212,11 +212,12 @@ div.container main section.sideMenuContent {
   flex-direction: row;
   width: 90vw;
   margin: 20px auto;
+  color: #959595;
 }
 div.container main section.sideMenuContent div.sideList {
   display: inline-block;
   width: 40%;
-  border: 1px solid grey;
+  border: 1px solid #f3f0f0;
 }
 div.container main section.sideMenuContent div.sideList ul {
   list-style-type: none;
@@ -228,14 +229,19 @@ div.container main section.sideMenuContent div.sideList ul li {
   font-size: 25px;
   font-weight: bold;
 }
-div.container main section.sideMenuContent div.sideList ul li.active {
-  border-left: 2px solid blue;
-  background-color: lightgrey;
+div.container main section.sideMenuContent div.sideList ul li.active, div.container main section.sideMenuContent div.sideList ul li:hover {
+  border-left: 8px solid blue;
+  background-color: #0707070e;
 }
 div.container main section.sideMenuContent div.contentBox {
   display: inline-block;
+  position: relative;
+  bottom: 110px;
   padding: 20px;
   width: 55%;
+}
+div.container main section.sideMenuContent div.contentBox * {
+  padding: 5px;
 }
 div.container main section.sideMenuContent div.contentBox h2 {
   margin-bottom: 30px;
@@ -248,12 +254,19 @@ div.container main section.sideMenuContent div.contentBox p {
 div.container main section.sideMenuContent div.contentBox ul {
   list-style-type: none;
 }
+div.container main section.sideMenuContent div.contentBox ul li i {
+  color: #3bbaf5;
+}
 div.container main section.sideMenuContent div.contentBox img {
   width: 100px;
+  position: relative;
+  bottom: 85px;
+  float: right;
 }
 div.container main section.sliderOffers {
   background-image: url("img/slider-offers-bg.png");
   background-size: cover;
+  color: #959595;
 }
 div.container main section.sliderOffers div.sliderBox {
   display: flex;
@@ -262,31 +275,121 @@ div.container main section.sliderOffers div.sliderBox {
   width: 90vw;
   margin: auto;
 }
-div.container main section.sliderOffers div.sliderBox h2 {
+div.container main section.sliderOffers div.sliderBox h2, div.container main section.sliderOffers div.sliderBox h5 {
+  color: #3e3e3e;
   align-self: center;
+  padding: 10px;
+}
+div.container main section.sliderOffers div.sliderBox h2 {
+  font-size: 3.2rem;
 }
 div.container main section.sliderOffers div.sliderBox h5 {
-  align-self: center;
+  font-size: 1.16rem;
 }
 div.container main section.sliderOffers div.sliderBox div.slider {
   display: flex;
   width: 100%;
   margin: auto;
+  justify-content: space-between;
+  padding: 15px;
 }
 div.container main section.sliderOffers div.sliderBox div.slider div.offerCard {
+  border: 1px solid #efefef;
   display: inline-block;
   width: 30%;
+}
+div.container main section.sliderOffers div.sliderBox div.slider div.offerCard img {
+  width: 100%;
+  height: auto;
+}
+div.container main section.sliderOffers div.sliderBox div.slider div.offerCard div.titleLabel {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+div.container main section.sliderOffers div.sliderBox div.slider div.offerCard div.titleLabel h3 {
+  font-size: 25px;
+  color: black;
+}
+div.container main section.sliderOffers div.sliderBox div.slider div.offerCard div.titleLabel div.price {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: blue;
+}
+div.container main section.sliderOffers div.sliderBox div.slider div.offerCard div.titleLabel div.FREE {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #ffff7c;
+}
+div.container main section.sliderOffers div.sliderBox div.slider div.offerCard h4 {
+  font-size: 20px;
+  padding: 10px;
+}
+div.container main section.sliderOffers div.sliderBox div.slider div.offerCard p {
+  padding: 10px;
+}
+div.container main section.sliderOffers div.sliderBox div.slider div.offerCard div.infoData {
+  display: flex;
+  padding: 10px;
+}
+div.container main section.sliderOffers div.sliderBox div.slider div.offerCard div.infoData div {
+  padding: 2px;
+}
+div.container main section.tutor {
+  color: #959595;
+  width: 90vw;
+  margin: 30px auto;
 }
 div.container main section.tutor div.tutorBox {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+}
+div.container main section.tutor div.tutorBox * {
+  align-self: center;
+  padding: 7px;
+}
+div.container main section.tutor div.tutorBox h2 {
+  color: #3e3e3e;
+  font-size: 25px;
+  font-weight: 900;
 }
 div.container main section.tutor div.tutorBox div.profileBox {
   display: flex;
+  justify-content: space-evenly;
+}
+div.container main section.tutor div.tutorBox div.profileBox div.profileCard {
+  display: flex;
+  flex-direction: column;
+}
+div.container main section.tutor div.tutorBox div.profileBox div.profileCard * {
+  align-self: center;
+}
+div.container main section.tutor div.tutorBox div.profileBox div.profileCard h3 {
+  color: #3e3e3e;
+}
+div.container main section.tutor div.tutorBox div.profileBox div.profileCard h4 {
+  text-transform: uppercase;
 }
 div.container main section.tutor div.tutorBox div.profileBox div.profileCard img {
-  width: 200px;
-  height: 200px;
+  width: 170px;
+  height: 170px;
+}
+div.container main section.tutor div.tutorBox div.profileBox div.profileCard div.socialBar i:hover {
+  cursor: pointer;
+  color: #3bbaf5;
+}
+div.container main section.pricing {
+  color: #959595;
+}
+div.container main section.pricing h2, div.container main section.pricing p {
+  text-align: center;
+  padding: 8px;
+}
+div.container main section.pricing h2 {
+  color: #3e3e3e;
 }
 div.container main section.pricing table {
   width: 90vw;
@@ -315,6 +418,7 @@ div.container main section.pricing table tr th {
   padding: 15px;
   height: 200px;
   border-top: 3px solid #9ce0ff;
+  color: #3e3e3e;
 }
 div.container main section.pricing table tr th img {
   width: 75px;
@@ -334,6 +438,8 @@ div.container main section.pricing table tr td.blank {
 div.container main section.pricing table tr td.last {
   background-color: #f7fdff;
   height: 120px;
+  display: flex;
+  justify-content: center;
 }
 div.container main section.pricing table tr td.last div.button {
   width: -webkit-fit-content;
@@ -353,6 +459,16 @@ div.container main section.pricing table tr td.last div.button.active {
 }
 div.container main section.pricing table tr td.last div.button.active:hover {
   background-color: #3bbaf5;
+}
+div.container main section.logoPartner {
+  display: flex;
+  width: 90vw;
+  margin: 20px auto;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+div.container main section.logoPartner img:hover {
+  opacity: 0.85;
 }
 div.container footer {
   background-color: #222222;

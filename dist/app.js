@@ -175,7 +175,7 @@ function initVue() {
         'professional': 'fas fa-times',
         'advanced': 'fas fa-check'
       }],
-      'partnerLogos': ['educator.png', 'teach-hub.png', 'scholar.png', 'icademy.png', 'studycentral.png'],
+      'partnerLogos': ['img/educator.png', 'img/teach-hub.png', 'img/scholar.png', 'img/icademy.png', 'img/studycentral.png'],
       'footerLists': [['Providing Life Changing Experiences Through Education. Class That Fit Your Busy Life. Closer to Home', '1-677-124-44227', 'Mon - Sat 8.00 - 18.00'], ['Popular Courses', 'Business English', 'Preston Marshall', 'Social Computing', 'David Sanders', 'Learn Spanish', 'Jennie King'], ['Support', 'User Dashboard', 'Contact Us', 'FAQ', 'Course Offer', 'Events']]
     },
     methods: {
